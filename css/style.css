@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem; /* Base font size */
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Skip to Main */
+.skip {
+    position: relative;
+}
+
+.skip a {
+    position: absolute;
+    top: -4rem;
+    padding: 0.5rem;
+}
+
+.skip a:focus {
+    top: 2rem;
+    background-color: white;
+}
+
+/* Navigation */
+nav {
+    display: block;
+    background-color: #00274c;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFCB05;
+    font-size: 1.25rem;
+    transition: text-decoration 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+nav ul .logo {
+    margin-right: auto;
+    padding: 0.15rem;
+}
+
+nav ul .logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1, header h2, header h3 {
+    color: #00274c;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Main Content */
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+main ul {
+    padding-left: 2rem;
+    margin: 0;
+}
+
+/* Section and Paragraph Styling */
+section, p {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    border-bottom: 3px solid #FFCB05;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    font-style: italic;
+    padding-bottom: 0.5rem;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Image Styling */
+main img, .images img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+/* Footer */
+footer {
+    background-color: #00274c;
+    color: #FFCB05;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #FFCB05;
+}
+
+footer a:hover, footer a:focus {
+    color: #fff;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 800px) { 
+/* styling for section and grid */
+main img {
+    max-width: 50%;
+}
+.images img {
+    max-width: 90%;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+    align-items: start;
+}
+.images figure {
+    grid-column: 1/2;
+    width: 100%;
+}
+
+.images figure img {
+    width: 100%;
+    height: auto;
+}
+
+.images article {
+    grid-column: 
