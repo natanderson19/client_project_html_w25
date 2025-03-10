@@ -74,7 +74,7 @@ nav ul .logo img {
 /* Header */
 header {
     text-align: center;
-    padding: 2rem 1rem;
+
 }
 
 header h1, header h2, header h3 {
@@ -193,4 +193,9 @@ main img {
 }
 
 .images article {
-    grid-column: 
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+}
