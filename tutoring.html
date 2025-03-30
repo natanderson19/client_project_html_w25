@@ -96,8 +96,23 @@
         </div>
     </main>
     <footer>
-        <p>UMSI Tutoring | <strong><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=0">UMSI Tutoring & Academic Support</a></strong></p>
-        
+        <div class="foot_container">
+            <img src="images/M_Logo.png" alt="University of Michigan logo" class="logo">
+            <div class="resources">
+                <p><h4>Helpful Links and Resources:</h4> <br><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a> <br> <a href="https://mbc.studentlife.umich.edu/">Maize and Blue Cupbaord</a> <br><a href="https://caps.umich.edu/">Counseling and Psychological Services</a> <br><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=0">UMSI Tutoring and Academic Support</a></p>
+            </div>
+            <div class="copyright_address">
+                <h4>© Copyrights <span id="year"></span> by Natalie Anderson. All rights reserved.</h4>
+                <br>
+                <p>School of Information <br>
+                    University of Michigan <br>
+                    105 S State St. <br>
+                    Ann Arbor, MI 48109-1285 <br></p>
+            </div>
+        </div>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
 </body>
 </html>

@@ -148,6 +148,7 @@ main img, .images img {
 /* Footer */
 footer {
     background-color: #00274c;
+    border-bottom: 13px solid #ffcb05;
     color: #FFCB05;
     padding: 1rem;
     text-align: center;
@@ -161,6 +162,25 @@ footer a:hover, footer a:focus {
     color: #fff;
 }
 
+.foot_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 2em;
+}
+
+footer .logo {
+    grid-column: 1;
+    max-width: 170px;
+}
+
+.resources {
+    grid-column: 2;
+}
+
+.copyright_address {
+    padding-top: 15px;
+    grid-column: 3/4;
+}
 .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
