@@ -121,7 +121,6 @@ body {
 /* Header */
 header {
     text-align: center;
-
 }
 
 header h1, header h2, header h3 {
@@ -132,13 +131,13 @@ header h1 {
     font-size: 2.5rem;
     font-weight: bolder;
     text-transform: uppercase;
-    margin: 0;
+    margin: 1rem;
 }
 
 /* Main Content */
 .container {
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
     width: 100%;
     box-sizing: border-box;
 }
@@ -147,8 +146,9 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.5rem;
-    padding: 1rem 0;
+    padding: 0;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 main ul {
@@ -185,13 +185,25 @@ figcaption {
 }
 
 /*IMAGES*/
+.images {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1rem;
+}
 main img, .images img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     height: auto;
+    border: 5px solid #00274c; 
+    padding: 5px; 
+    background-color: #FFCB05; 
+    border-radius: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
+
+
 /*FOOTER GENERAL STYLES*/
 footer {
     background-color: #00274c;
@@ -231,11 +243,7 @@ footer .logo {
     text-align: center;
     grid-column: 1;
 }
-.images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
+
 
 
 /*media query for tablet and desktop*/
@@ -245,17 +253,17 @@ main img {
     max-width: 50%;
 }
 .images img {
-    max-width: 90%;
+    max-width: 75%;
 }
 
 .images {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     align-items: start;
 }
 .images figure {
-    grid-column: 1/2;
+    grid-column: 1;
     width: 100%;
 }
 
@@ -265,7 +273,7 @@ main img {
 }
 
 .images article {
-    grid-column: 2/3;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -347,3 +355,4 @@ nav a.active {
     width: 75px;
     height: auto;}
 }
+
